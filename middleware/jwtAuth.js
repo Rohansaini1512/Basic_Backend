@@ -21,4 +21,4 @@ const jwtAuth = (req , res , next) => {
     }
 }
 
-module.experts = jwtAuth;
+module.exports = jwtAuth;
