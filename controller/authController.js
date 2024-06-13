@@ -67,7 +67,7 @@ const signin = async (req,res) => {
         })
         .select('+password');
 
-    if(!user || user.password !== password){
+    if(!user || !(await bcrypt.compare(password , user.password))){
         return res.status(400).json({
             success: false,
             message: "Incvalid credentials"
