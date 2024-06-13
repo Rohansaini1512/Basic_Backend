@@ -23,7 +23,7 @@ const userSchema = new Schema({
         select: false
     },
     forgotPasswordToken: {
-        type: toString,
+        type: String,
     },
     forgotPasswordExpiryDate: {
         type: Date

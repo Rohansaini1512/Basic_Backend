@@ -1,5 +1,5 @@
 const express = require('express')
-const { signup , signin , getUser} = require('../controller/authController')
+const { signup , signin , getUser , logout} = require('../controller/authController')
 const authRouter = express.Router();
 const jwtAuth = require('../middleware/jwtAuth');
 
